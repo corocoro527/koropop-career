@@ -1,0 +1,1007 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8NWPD2QBCQ"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-8NWPD2QBCQ');
+</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>
+手取り・残業代 概算シミュレーター｜月給から無料計算｜KOROPOP GAMES
+</title>
+
+<meta
+name="description"
+content="月給・所定労働時間・残業時間・賞与から、残業代・総支給額・年間総支給・手取り目安を無料で概算。控除率は自分で変更できます。"
+>
+
+<link
+rel="canonical"
+href="https://career.koropopgames.com/tedori.html"
+>
+
+<link rel="stylesheet" href="koropop-theme.css">
+
+<meta
+name="robots"
+content="index,follow,max-image-preview:large"
+>
+
+<meta
+name="koropop-updated"
+content="2026-09-30"
+>
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="手取り・残業代 概算シミュレーター">
+<meta property="og:description" content="月給・残業時間から手取りと残業代を概算。">
+<meta property="og:url" content="https://career.koropopgames.com/tedori.html">
+<meta property="og:site_name" content="KOROPOP GAMES">
+
+<style>
+
+*{box-sizing:border-box}
+
+body{
+margin:0;
+}
+
+.container{
+width:min(100% - 28px,900px);
+margin:auto;
+}
+
+header{
+padding:18px 0;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:15px;
+}
+
+.brand{
+font-weight:900;
+text-decoration:none;
+}
+
+.hero{
+padding:42px 0 22px;
+}
+
+.hero h1{
+font-size:clamp(2rem,6vw,3rem);
+line-height:1.3;
+}
+
+.tool{
+padding:24px;
+background:#fff;
+border:1px solid #dfe5ec;
+border-radius:18px;
+margin-bottom:28px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:14px;
+}
+
+.field label{
+display:block;
+font-weight:800;
+margin-bottom:6px;
+}
+
+.field small{
+display:block;
+color:#667085;
+margin-bottom:7px;
+}
+
+.field input{
+width:100%;
+padding:12px;
+border:1px solid #ccd8e3;
+border-radius:10px;
+font:inherit;
+}
+
+.btn{
+width:100%;
+margin-top:20px;
+border:0;
+border-radius:999px;
+padding:14px 18px;
+background:#1769b0;
+color:#fff;
+font:inherit;
+font-weight:900;
+cursor:pointer;
+}
+
+.result{
+display:none;
+margin-top:20px;
+padding:20px;
+border:1px solid #cfdcea;
+border-radius:14px;
+background:#f7fbff;
+}
+
+.result.show{
+display:block;
+}
+
+.result-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+margin-top:13px;
+}
+
+.result-card{
+padding:14px;
+background:#fff;
+border:1px solid #dfe5ec;
+border-radius:12px;
+}
+
+.result-card span{
+display:block;
+font-size:.8rem;
+color:#667085;
+}
+
+.result-card strong{
+display:block;
+font-size:1.4rem;
+color:#174a7e;
+}
+
+section{
+margin-bottom:44px;
+}
+
+.point{
+padding:20px;
+border-radius:14px;
+margin:18px 0;
+}
+
+.table-wrap{
+overflow-x:auto;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+padding:12px;
+border:1px solid #dfe5ec;
+text-align:left;
+}
+
+th{
+background:#f4f8fc;
+}
+
+.faq details{
+padding:15px 17px;
+margin-bottom:10px;
+background:#fff;
+border:1px solid #dfe5ec;
+border-radius:12px;
+}
+
+.sources{
+padding:20px;
+background:#fff;
+border:1px solid #dfe5ec;
+border-radius:14px;
+}
+
+.note{
+font-size:.84rem;
+color:#667085;
+}
+
+@media(max-width:650px){
+
+.grid,
+.result-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<header>
+
+<div class="container nav">
+
+<a class="brand" href="index.html">
+KOROPOP GAMES
+</a>
+
+<a href="career.html">
+仕事・転職ガイド
+</a>
+
+</div>
+
+</header>
+
+
+<main class="container">
+
+<div class="hero">
+
+<span>🧮 無料ツール</span>
+
+<h1>
+手取り・残業代<br>
+概算シミュレーター
+</h1>
+
+<p>
+月給・残業時間などから
+<strong>
+残業代、月の総支給、
+年間総支給、手取り目安
+</strong>
+をまとめて計算します。
+</p>
+
+</div>
+
+
+<div class="tool">
+
+<div class="grid">
+
+
+<div class="field">
+
+<label for="salary">
+基本給（月）
+</label>
+
+<small>
+万円
+</small>
+
+<input
+id="salary"
+type="number"
+inputmode="decimal"
+value="25"
+min="0"
+step="0.1"
+>
+
+</div>
+
+
+<div class="field">
+
+<label for="allowance">
+毎月の固定手当
+</label>
+
+<small>
+万円。なければ0
+</small>
+
+<input
+id="allowance"
+type="number"
+inputmode="decimal"
+value="0"
+min="0"
+step="0.1"
+>
+
+</div>
+
+
+<div class="field">
+
+<label for="hours">
+月の所定労働時間
+</label>
+
+<small>
+分からなければ160時間で試算
+</small>
+
+<input
+id="hours"
+type="number"
+inputmode="decimal"
+value="160"
+min="1"
+step="1"
+>
+
+</div>
+
+
+<div class="field">
+
+<label for="overtime">
+月の残業時間
+</label>
+
+<small>
+時間
+</small>
+
+<input
+id="overtime"
+type="number"
+inputmode="decimal"
+value="20"
+min="0"
+step="0.5"
+>
+
+</div>
+
+
+<div class="field">
+
+<label for="premium">
+残業割増倍率
+</label>
+
+<small>
+通常時間外の初期値は1.25
+</small>
+
+<input
+id="premium"
+type="number"
+inputmode="decimal"
+value="1.25"
+min="1"
+step="0.05"
+>
+
+</div>
+
+
+<div class="field">
+
+<label for="bonus">
+年間賞与
+</label>
+
+<small>
+基本給の何か月分か
+</small>
+
+<input
+id="bonus"
+type="number"
+inputmode="decimal"
+value="2"
+min="0"
+step="0.1"
+>
+
+</div>
+
+
+<div class="field">
+
+<label for="deduction">
+控除率の目安
+</label>
+
+<small>
+％。初期値20％。給与明細に合わせて変更可
+</small>
+
+<input
+id="deduction"
+type="number"
+inputmode="decimal"
+value="20"
+min="0"
+max="60"
+step="0.1"
+>
+
+</div>
+
+
+</div>
+
+
+<button
+class="btn"
+id="calc"
+type="button"
+>
+計算する
+</button>
+
+
+<div
+class="result"
+id="result"
+>
+
+<strong>
+概算結果
+</strong>
+
+<div class="result-grid">
+
+
+<div class="result-card">
+
+<span>
+時給換算
+</span>
+
+<strong id="hourly">
+-
+</strong>
+
+</div>
+
+
+<div class="result-card">
+
+<span>
+残業代
+</span>
+
+<strong id="overtime-pay">
+-
+</strong>
+
+</div>
+
+
+<div class="result-card">
+
+<span>
+月の総支給
+</span>
+
+<strong id="gross">
+-
+</strong>
+
+</div>
+
+
+<div class="result-card">
+
+<span>
+月の手取り目安
+</span>
+
+<strong id="net">
+-
+</strong>
+
+</div>
+
+
+<div class="result-card">
+
+<span>
+年間総支給
+</span>
+
+<strong id="annual-gross">
+-
+</strong>
+
+</div>
+
+
+<div class="result-card">
+
+<span>
+年間手取り目安
+</span>
+
+<strong id="annual-net">
+-
+</strong>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<p class="note">
+このツールは簡易試算です。
+実際の残業単価の基礎となる賃金、
+社会保険料、
+所得税、
+住民税、
+扶養、
+年齢、
+賞与控除等によって
+実際の手取りは変わります。
+</p>
+
+</div>
+
+
+<section>
+
+<h2>
+この計算で分かること
+</h2>
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+<tr>
+<th>項目</th>
+<th>計算方法</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>時給換算</td>
+<td>基本給 ÷ 所定労働時間</td>
+</tr>
+
+<tr>
+<td>残業代</td>
+<td>時給 × 割増倍率 × 残業時間</td>
+</tr>
+
+<tr>
+<td>月総支給</td>
+<td>基本給＋固定手当＋残業代</td>
+</tr>
+
+<tr>
+<td>年間総支給</td>
+<td>月総支給×12＋基本給×賞与月数</td>
+</tr>
+
+<tr>
+<td>手取り目安</td>
+<td>総支給×（1－入力した控除率）</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>
+残業代の割増率について
+</h2>
+
+<p>
+厚生労働省によると、
+法定労働時間を超える
+時間外労働には
+<strong>25％以上</strong>
+の割増賃金が必要です。
+</p>
+
+<p>
+さらに、
+法定休日労働は35％以上、
+深夜労働は25％以上、
+1か月60時間を超える
+時間外労働部分は50％以上となります。
+</p>
+
+<div class="point">
+
+<strong>
+このツールの初期値1.25は
+一般的な法定時間外労働の最低割増率を
+使ったものです。
+</strong>
+
+<p>
+深夜・休日・月60時間超などは
+条件が異なるため、
+必要に応じて倍率を変更してください。
+</p>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>
+なぜ「手取り20％引き」で
+断定しないの？
+</h2>
+
+<p>
+実際の手取りは
+人によって違うからです。
+</p>
+
+<ul>
+
+<li>
+健康保険
+</li>
+
+<li>
+厚生年金
+</li>
+
+<li>
+雇用保険
+</li>
+
+<li>
+所得税
+</li>
+
+<li>
+住民税
+</li>
+
+<li>
+年齢
+</li>
+
+<li>
+扶養状況
+</li>
+
+<li>
+前年所得
+</li>
+
+</ul>
+
+<p>
+などで変わります。
+</p>
+
+<p>
+そのためこのページでは
+<strong>
+控除率を自分で変更できる
+概算方式
+</strong>
+にしています。
+</p>
+
+<p>
+今の給与明細があるなら、
+
+<strong>
+控除額 ÷ 総支給額 ×100
+</strong>
+
+で自分のおおよその控除率を出して入力すると、
+単純な20％固定より
+自分に近い比較ができます。
+</p>
+
+</section>
+
+
+<section>
+
+<h2>
+転職オファー比較にも使える
+</h2>
+
+<p>
+例えば求人を見るときは、
+月給だけでなく
+次も分けて確認してください。
+</p>
+
+<ul>
+
+<li>
+基本給
+</li>
+
+<li>
+固定残業代
+</li>
+
+<li>
+資格手当
+</li>
+
+<li>
+夜勤手当
+</li>
+
+<li>
+賞与
+</li>
+
+<li>
+残業時間
+</li>
+
+</ul>
+
+<p>
+<a href="20s-it-tenshoku-nenshu.html">
+→ 20代IT転職の年収の見方
+</a>
+</p>
+
+<p>
+<a href="it-job-nenshu-hikaku.html">
+→ IT職種別の年収を比較
+</a>
+</p>
+
+</section>
+
+
+<section class="faq">
+
+<h2>
+よくある質問
+</h2>
+
+<details>
+<summary>
+手取りは総支給の80％ですか？
+</summary>
+
+<p>
+必ず80％になるわけではありません。
+社会保険・税金・住民税・扶養等で変わります。
+このツールでは控除率を変更できます。
+</p>
+</details>
+
+<details>
+<summary>
+残業代は基本給÷160時間でいい？
+</summary>
+
+<p>
+このツールでは簡易計算として使用しています。
+実際の割増賃金の基礎となる賃金や
+所定労働時間は勤務先の条件によって異なります。
+</p>
+</details>
+
+<details>
+<summary>
+固定残業代がある場合は？
+</summary>
+
+<p>
+この計算だけでは正確に扱えません。
+求人票・給与明細で、
+固定残業時間・金額・超過分の扱いを確認してください。
+</p>
+</details>
+
+<details>
+<summary>
+賞与の手取りも同じ控除率？
+</summary>
+
+<p>
+実際には給与と賞与で
+社会保険・税の計算方法が異なるため、
+年間手取りも簡易的な目安です。
+</p>
+</details>
+
+</section>
+
+
+<section class="sources">
+
+<h2>
+参考情報
+</h2>
+
+<ul>
+
+<li>
+<a
+href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudouseisaku/chushoukigyou/joken_kankyou_rule.html"
+target="_blank"
+rel="noopener noreferrer"
+>
+厚生労働省
+労働条件・職場環境に関するルール
+</a>
+</li>
+
+<li>
+<a
+href="https://www.mhlw.go.jp/web/t_doc?dataId=73022000"
+target="_blank"
+rel="noopener noreferrer"
+>
+労働基準法
+</a>
+</li>
+
+</ul>
+
+<p class="note">
+税・社会保険・給与計算の正式な金額については、
+勤務先の給与担当者、
+税務署、
+年金事務所等の案内をご確認ください。
+</p>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<div class="container">
+
+<a href="index.html">トップ</a>
+・
+<a href="career.html">仕事・転職</a>
+・
+<a href="privacy.html">プライバシーポリシー</a>
+・
+<a href="contact.html">お問い合わせ</a>
+
+<br><br>
+
+© 2026 KOROPOP GAMES
+
+</div>
+
+</footer>
+
+
+<script>
+
+(() => {
+
+const yen =
+value =>
+Math.round(value).toLocaleString("ja-JP")+"円";
+
+
+const calc =
+document.getElementById("calc");
+
+
+calc.addEventListener("click",()=>{
+
+
+const salary =
+(Number(document.getElementById("salary").value)||0)*10000;
+
+const allowance =
+(Number(document.getElementById("allowance").value)||0)*10000;
+
+const hours =
+Number(document.getElementById("hours").value)||160;
+
+const overtime =
+Number(document.getElementById("overtime").value)||0;
+
+const premium =
+Number(document.getElementById("premium").value)||1.25;
+
+const bonus =
+Number(document.getElementById("bonus").value)||0;
+
+const deduction =
+Math.min(
+60,
+Math.max(
+0,
+Number(document.getElementById("deduction").value)||0
+)
+);
+
+
+if(salary<=0 || hours<=0){
+
+alert("基本給と所定労働時間を入力してください。");
+return;
+
+}
+
+
+const hourly =
+salary / hours;
+
+const overtimePay =
+hourly * premium * overtime;
+
+const gross =
+salary + allowance + overtimePay;
+
+const net =
+gross * (1-deduction/100);
+
+const annualGross =
+gross*12 + salary*bonus;
+
+const annualNet =
+annualGross*(1-deduction/100);
+
+
+document.getElementById("hourly").textContent =
+yen(hourly);
+
+document.getElementById("overtime-pay").textContent =
+yen(overtimePay);
+
+document.getElementById("gross").textContent =
+yen(gross);
+
+document.getElementById("net").textContent =
+yen(net);
+
+document.getElementById("annual-gross").textContent =
+yen(annualGross);
+
+document.getElementById("annual-net").textContent =
+yen(annualNet);
+
+
+document.getElementById("result")
+.classList.add("show");
+
+
+});
+
+})();
+
+</script>
+
+</body>
+</html>
