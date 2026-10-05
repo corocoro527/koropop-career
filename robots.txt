@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://career.koropopgames.com/sitemap.xml
